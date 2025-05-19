@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi Sitio Web</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__logo">Mi Sitio</h1>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">Acerca de</a></li>
+                    <li class="nav__item"><a href="services.html" class="nav__link">Servicios</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link nav__link--active">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="page-header__container">
+                <h1 class="page-header__title">Contacto</h1>
+                <p class="page-header__text">Estamos aquí para ayudarte. ¡Contáctanos!</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact__container">
+                <div class="contact__info">
+                    <h2 class="contact__title">Información de Contacto</h2>
+                    <p class="contact__text">Puedes contactarnos a través de los siguientes medios o utilizando el formulario de contacto.</p>
+                    
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <div class="contact__icon">📍</div>
+                            <div class="contact__detail-content">
+                                <h3 class="contact__detail-title">Dirección</h3>
+                                <p class="contact__detail-text">Calle Principal 123, Ciudad, País</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__detail">
+                            <div class="contact__icon">📞</div>
+                            <div class="contact__detail-content">
+                                <h3 class="contact__detail-title">Teléfono</h3>
+                                <p class="contact__detail-text">(123) 456-7890</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__detail">
+                            <div class="contact__icon">✉️</div>
+                            <div class="contact__detail-content">
+                                <h3 class="contact__detail-title">Email</h3>
+                                <p class="contact__detail-text">info@misitio.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__detail">
+                            <div class="contact__icon">⏰</div>
+                            <div class="contact__detail-content">
+                                <h3 class="contact__detail-title">Horario</h3>
+                                <p class="contact__detail-text">Lunes a Viernes: 9:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact__form-container">
+                    <h2 class="contact__form-title">Envíanos un Mensaje</h2>
+                    <form class="contact__form">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Nombre</label>
+                            <input type="text" id="name" name="name" class="form__input" required>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email</label>
+                            <input type="email" id="email" name="email" class="form__input" required>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="subject" class="form__label">Asunto</label>
+                            <input type="text" id="subject" name="subject" class="form__input" required>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="message" class="form__label">Mensaje</label>
+                            <textarea id="message" name="message" class="form__textarea" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form__button">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="map__container">
+                <h2 class="map__title">Nuestra Ubicación</h2>
+                <div class="map__placeholder">
+                    <!-- Aquí iría un mapa real en una implementación completa -->
+                    <div class="map__image-placeholder">Mapa de ubicación</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="faq__container">
+                <h2 class="faq__title">Preguntas Frecuentes</h2>
+                
+                <div class="faq__list">
+                    <div class="faq__item">
+                        <h3 class="faq__question">¿Cuál es el tiempo de respuesta a las consultas?</h3>
+                        <p class="faq__answer">Nos comprometemos a responder todas las consultas en un plazo máximo de 24 horas hábiles.</p>
+                    </div>
+                    
+                    <div class="faq__item">
+                        <h3 class="faq__question">¿Ofrecen servicios personalizados?</h3>
+                        <p class="faq__answer">Sí, adaptamos nuestros servicios a las necesidades específicas de cada cliente.</p>
+                    </div>
+                    
+                    <div class="faq__item">
+                        <h3 class="faq__question">¿Trabajan con clientes internacionales?</h3>
+                        <p class="faq__answer">Sí, trabajamos con clientes de todo el mundo y ofrecemos soporte en varios idiomas.</p>
+                    </div>
+                    
+                    <div class="faq__item">
+                        <h3 class="faq__question">¿Cómo puedo solicitar un presupuesto?</h3>
+                        <p class="faq__answer">Puede solicitar un presupuesto a través de nuestro formulario de contacto o llamándonos directamente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__info">
+                <h3 class="footer__logo">Mi Sitio</h3>
+                <p class="footer__text">Una plantilla web moderna y adaptable.</p>
+            </div>
+            
+            <div class="footer__links">
+                <h4 class="footer__heading">Enlaces Rápidos</h4>
+                <ul class="footer__nav">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="about.html">Acerca de</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__contact">
+                <h4 class="footer__heading">Contacto</h4>
+                <address>
+                    <p>Email: info@misitio.com</p>
+                    <p>Teléfono: (123) 456-7890</p>
+                </address>
+            </div>
+        </div>
+        
+        <div class="footer__bottom">
+            <p>&copy; 2025 Mi Sitio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

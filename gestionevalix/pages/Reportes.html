@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/imagenes/Evalix.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/gestionevalix/assets/imagenes/Evalix.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/Reportes.css">
+    <title>Evalix</title>
+</head>
+<body>
+<header class="header">
+    <img class="header__evalix" src="/gestionevalix/assets/imagenes/Evalix.png" alt="Logo de evalix">
+    <h1 style="color: rgb(0, 0, 0);padding: 1rem; background-color: rgba(245, 245, 220, 0.162);">Bienvenido a Evalix</h1>
+<!-- logo de Evalix a la izquierda -->
+    <div class="header__sesion">
+    <!-- Icono de cerrar sesión -->
+        <img class="logosesion" src="/gestionevalix/assets/imagenes/cerrar-sesion.png" alt="Logo de cerrar sesión">
+        <span class="textsesion" >Cerrar sesión</span>
+    </div>
+    
+</header>
+<div class="container">
+    <aside class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item"><a class="navbar__link" href="/gestionevalix/docentes.html" >Inicio</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="/gestionevalix/pages/Notas.html" >Notas</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="/gestionevalix/pages/Asistencia.html">Asistencia</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="/gestionevalix/pages/Calendario.html">Calendario Académico</a></li>
+        </ul>  
+    </aside>
+    <main class="main">
+        <h2 class="main-titulo">📊 Gráfico de Rendimiento Académico</h2>
+        <div class="container-principal">
+            <form action="" class="container-principal__formulario">
+                <ul class="container-principal__list">
+                     <li class="container-principal__item">
+                        <label for="asignatura" class="container-principal__label">Asignatura</label>
+                        <select class="container-principal__select" name="asignatura" id="asignatura">
+                            <option value="">Seleccione la asignatura</option>
+                            <option value="">Matématicas Financiera</option>
+                            <option value="">Matemáticas General</option>
+                            <option value="">Estadística General</option>
+                            <option value="">Estadística Descriptiva</option>
+                            <option value="">Estadística Inferencial</option>
+                            <option value="">Geometría Vectorial</option>
+                            <option value="">Geometría Líneal</option>
+                        </select>
+                     </li>
+                    <li class="container-principal__item">
+                        <label for="group" class="container-principal__label">Grupo</label>
+                        <select class="container-principal__select"  name="group" id="group">
+                            <option value="">Seleccione el grupo</option>
+                            <option value="">Grupo 1</option>
+                            <option value="">Grupo 2</option>
+                            <option value="">Grupo 3</option>
+                            <option value="">Grupo 4</option>
+                        </select>
+                     </li>
+                    <li class="container-principal__item">
+                        <label for="time" class="container-principal__label">Perido Académico</label>
+                        <select class="container-principal__select" name="time" id="time">
+                            <option value="">Seleccione el perido académico</option>
+                            <option value="">Perido 1</option>
+                            <option value="">Periodo 2</option>
+                            <option value="">Perido 3</option>
+                        </select>
+                    </li>
+                </ul>
+            </form>
+       </div>
+        <div class="container-principal neon-info-hi">
+            <img class="container-principal__imagen" src="/gestionevalix/assets/imagenes/reporte_notas.png" alt="Imagen principal">
+             <a href="reporte-notas.pdf" class="container-principal__buttom" download>
+      📥 Descargar reporte de notas (PDF)</a>
+    <p class="mensaje-descarga">✔️ El reporte ha sido descargado.</p>
+
+        </div>
+    </main>
+</div>
+<footer class="footer">
+    <h4>© 2025 Evalix. Todos los derechos reservados.</h4>
+    <h4>Políticas de privacidad</h4>
+    <h4>Términos y condiciones</h4>
+</footer>
+</body>
+</html>

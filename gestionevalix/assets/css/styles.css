@@ -1,0 +1,304 @@
+:root {
+  /* === Rojos y Rosas === */
+  --col-rac: #e74c3c;    /* rojo acento */
+  --col-rqm: #B82B00;    /* rojo quemado */
+  --col-rpu: #FF0000;    /* rojo puro */
+  --col-rcm: #DC143C;    /* rojo carmesí */
+  --col-ros: #FFC0CB;    /* rosa */
+  --col-rfu: #FF69B4;    /* rosa fucsia */
+  --col-salm: #FF7F50;    /* salmón */
+  --col-ros2: #FF1493;   /* rosa intenso (deep pink) */
+
+  /* === Naranjas === */
+  --col-nos: #B86000;    /* naranja oscuro */
+  --col-nlo: #F7B733;    /* naranja logo */
+  --col-njo: #FFA500;    /* anaranjado (naranja puro) */
+
+  /* === Amarillos y Dorados === */
+  --col-dor: #B88900;    /* dorado (amarillo oscuro) */
+  --col-amo: #B8AE00;    /* amarillo mostaza (o amarillo oliva) */
+  --col-amp: #FFFF00;    /* amarillo puro */
+  --col-drb: #FFD700;    /* dorado brillante (gold) */
+
+  /* === Verdes (incluyendo Teales y Olivas) === */
+  --col-vse: #2ecc71;    /* verde secundario (o verde medio) */
+  --col-vbr: #00B81F;    /* verde brillante (o verde intenso) */
+  --col-tos: #216351;    /* teal oscuro (verde azulado oscuro) */
+  --col-vmo: #1C3831;    /* verde muy oscuro */
+  --col-tme: #1E7860;    /* teal medio (verde azulado medio) */
+  --col-vmn: #00B785;    /* verde menta (o turquesa claro verdoso) */
+  --col-vos: #008000;    /* verde oscuro (verde clásico) */
+  --col-vli: #90EE90;    /* verde lima (verde claro) */
+  --col-vol: #556B2F;    /* verde oliva */
+
+  /* === Azules (incluyendo Cianes y Turquesas) === */
+  --col-apr: #3498db;    /* azul principal */
+  --col-aos: #2c3e50;    /* azul oscuro (o azul profundo) */
+  --col-tql: #4ECDC4;    /* turquesa logo */
+  --col-apu: #0000FF;    /* azul puro */
+  --col-acl: #ADD8E6;    /* azul claro */
+  --col-amr: #00008B;    /* azul marino */
+  --col-cia: #00FFFF;    /* cian */
+
+  /* === Púrpuras, Violetas, Magentas e Índigos === */
+  --col-mag: #A300B8;    /* magenta */
+  --col-pin: #3F00B8;    /* púrpura intenso (o índigo fuerte) */
+  --col-lav: #6360E5;    /* lavanda (o azul púrpura) */
+  --col-mlo: #6C63FF;    /* morado logo */
+  --col-mpu: #FF00FF;    /* magenta puro (fucsia brillante) */
+  --col-vio: #EE82EE;    /* violeta */
+  --col-ind: #4B0082;    /* índigo clásico */
+
+  /* === Marrones y Beiges === */
+  --col-mrj: #633021;    /* marrón rojizo */
+  --col-mmo: #38311C;    /* marrón muy oscuro (casi negro oliva) */
+  --col-mcf: #A52A2A;    /* marrón café (o marrón estándar) */
+  --col-bei: #F5F5DC;    /* beige */
+
+  /* === Neutros (Grises, Blanco, Negro) === */
+  --col-gcl: #ecf0f1;    /* gris claro (casi blanco) */
+  --col-ngr: #000000;    /* negro */
+  --col-bla: #FFFFFF;    /* blanco */
+  --col-gme: #808080;    /* gris medio */
+  --col-gos: #A9A9A9;    /* gris oscuro (dim gray) */
+  --col-gsu: #D3D3D3;    /* gris suave (light gray) */
+  --col-pla: #C0C0C0;    /* plata */
+
+  /* === Colores de UI/Propósito Específico === */
+  /* Estos podrían ser neutros oscuros/claros, pero se definen por su uso */
+  --col-fon: #1E202E;    /* fondo oscuro (para UI) */
+  --col-txt: #F1F2F6;    /* texto claro (para UI sobre fondos oscuros) */
+  --font-page: Arial, Helvetica, sans-serif;
+}
+html{
+  font-size: 100.5%; 
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-page);
+}
+
+.body{
+  background-image: url("../imagenes/universitarios\ fut.png");   
+  background-repeat: no-repeat;
+  background-size: auto 115%;
+  background-attachment: fixed;
+  background-position: top;    
+  height: 100vh;
+  
+}
+.nav {
+  background: rgba(255, 255, 255, 0.05);
+  width: 100%;
+  height: 15%;
+  list-style: none;
+  margin: 0.05em auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.005);
+  gap : 0.5rem;
+  flex-wrap: wrap;       
+  color: white;
+  padding: 0,9rem 4%;
+  backdrop-filter: blur(7px);
+  position: relative;
+  max-width: 2000px;
+  max-height: max-content;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 1;
+  
+}  
+.nav__div{
+  height: 12rem;
+  width: 60%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  row-gap: 0.1rem;
+  gap: 0.1rem;
+  flex-wrap: wrap;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.nav__a {
+  height: 3rem;
+  background: rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(50px);
+  color: #f3ecec;
+  text-decoration: none;
+  padding: 10px 5px;
+  border: 0.25em solid transparent; 
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 1.5s ease, border-color 0.9s ease, color 0.8s ease;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+#logo{
+  width: 130px;
+  height: 130px;
+  display: flex;
+  justify-content: flex-start;   
+  position: relative;
+  left: 1px;
+  margin: 0%;
+  padding: 0;  
+  left: 0.5px;
+}
+
+img {
+  width: 130px;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;   
+  position: relative;    
+  margin: 0%;
+  padding: 0;  
+  left: 0.5px;
+  z-index: 5;
+}
+.section {text-align: center;
+  color:  var(--col-salm);
+  height: 225px;}
+
+
+  .neon-info-hi {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: white;
+      padding: 1px 1px;
+      border-radius: 10px;
+      display: flex;
+      position: relative;
+      overflow-wrap: break-word;
+      box-shadow: 0 0 30px rgba(78, 205, 197, 0.01);
+      transition: all 0.9s ease;
+  }
+  
+  .neon-info-hi:hover {
+      box-shadow: 0 0 35px rgba(88, 236, 226, 0.95);
+      transform: translateY(-11px);
+  }
+  
+  .neon-info-hi::before {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(9px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing 20s linear infinite;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+  }
+  
+  .neon-info-hi:hover::before {
+      opacity: 0.9;
+  }
+  
+  @keyframes glowing {
+      0% { background-position: 0 0; }
+      10% { background-position: 100% 0; }
+      20% { background-position: 200% 0; }
+      30% { background-position: 300% 0; }
+      50% { background-position: 830% 0; }
+      70% { background-position: 300% 0; }
+      100% { background-position: 0 0; }
+  }  
+
+
+
+/* Sección Beneficios */
+#caracteristicas { height: 400px;
+   align-items: center; 
+   text-align: center;
+   flex-direction: row;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 0.5rem;
+   margin: 10px 0; }
+
+.caracteristicas {
+ height: 180px;
+ background: #f7f3f304;
+ padding: 0.5rem;
+ border-radius: 10px;
+ box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+ display: flex;
+ flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  flex-wrap: wrap;
+ text-align: center;
+}
+.caracteristicas__h3 { 
+  margin-bottom: 0.1rem;
+   color: var(--col-apu);
+   display: flex;   
+   flex-wrap: wrap;  
+   justify-content: center;
+   text-align: center;
+
+   }
+
+/* Sección Testimonial */
+.testimonial {
+  height: 150px;
+ background: #fff;
+ border-left: 5px solid #4a90e2;
+ padding: 0.05rem;
+ margin:  0;
+ font-style: italic;
+}
+.testimonial p { margin-bottom: 1rem; }
+.testimonial span { font-weight: bold; color: var(--col-salm); height: 200px;}
+
+/* CTA final */
+.cta { 
+  background: #636669; 
+  color: #fff; 
+  text-align: center; 
+  padding: 0rem 1rem; 
+  border-radius: 10px;
+}
+.cta h2 { font-size: 2rem; margin-bottom: 3rem; }
+.cta button {
+ background: #00B785;
+ color: #fff;
+ padding: 1rem 2rem;
+ font-size: 1.1rem;
+ border-radius: 10px;
+ transition:  0.7s;
+}
+.cta button:hover { background: #fa6234; }
+.cta button:focus {
+ background: #A300B8;
+ color: #fff;
+ padding: 1rem 2rem;
+ font-size: 1.1rem;
+ border-radius: 10px;
+ transition: 0.5s;
+}
+
+/* Footer */
+footer { text-align: center; padding: 1rem 0; font-size: 0.9rem; color: #fdf7f7; }
+
+
+
+
