@@ -31,6 +31,12 @@ body {
   object-fit: contain;
 }
 
+.header__evalix:hover {
+  transform: scale(1.4);
+  transition: 2s;
+}
+
+
 .header__sesion {
   height: 100px; /* Ajusta la altura, no el ancho */
   max-width: 100%; /* Evita que se desborde */
@@ -95,6 +101,9 @@ body {
 
 .navbar__item:hover {
  background-color: rgba(19, 184, 184, 0.605);
+ transform: scale(1.2);
+ transition: 2s;
+ box-shadow: 0 0 20px  rgba(19, 184, 184, 0.95) ;
 }
 .navbar__link {
   text-decoration: none;
